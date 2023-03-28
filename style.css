@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,300');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html,body{
+	height: 100%;
+    background-color: rgb(32, 32, 29);
+    scroll-behavior: smooth;
+    overflow: hidden;
+
+}
+
+body.active{
+    overflow-y: hidden;
+}
+
+.slide1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(32, 32, 29);
+    float: right;
+    overflow: hidden;
+}
+
+/*.slide1::after{
+    content: "";
+   position: relative;
+   top: 0px;
+   right: 0;
+   height: 100%;
+   width: 60000px;
+   background-image: url(stars.png);
+   background-size: contain;
+   opacity: 50%;
+   z-index: 0;
+   animation: backstars 2400s infinite linear, backstarsop 4s infinite linear;
+}
+
+.slide2::after{
+    content: "";
+   position: relative;
+   top: 0px;
+   right: 0;
+   height: 100%;
+   width: 60000px;
+   background-image: url(stars.png);
+   background-size: contain;
+   opacity: 50%;
+   z-index: 0;
+   animation: backstars 2400s infinite linear, backstarsop 4s infinite linear;
+}
+
+.slide3::after{
+    content: "";
+   position: relative;
+   top: 0px;
+   right: 0;
+   height: 100%;
+   width: 60000px;
+   background-image: url(stars.png);
+   background-size: contain;
+   opacity: 50%;
+   z-index: 0;
+   animation: backstars 2400s infinite linear, backstarsop 4s infinite linear;
+}
+
+.slide4::after{
+    content: "";
+   position: relative;
+   top: 0px;
+   right: 0;
+   height: 100%;
+   width: 60000px;
+   background-image: url(stars.png);
+   background-size: contain;
+   opacity: 50%;
+   z-index: 0;
+   animation: backstars 2400s infinite linear, backstarsop 4s infinite linear;
+}
+
+.slide5::after{
+    content: "";
+   position: relative;
+   top: 0px;
+   right: 0;
+   height: 100%;
+   width: 60000px;
+   background-image: url(stars.png);
+   background-size: contain;
+   opacity: 50%;
+   z-index: 0;
+   animation: backstars 2400s infinite linear, backstarsop 4s infinite linear;
+}
+
+.slide6::after{
+    content: "";
+   position: absolute;
+   top: 0px;
+   right: 0;
+   height: 100%;
+   width: 60000px;
+   background-image: url(stars.png);
+   background-size: contain;
+   opacity: 50%;
+   z-index: 0;
+   animation: backstars 2400s infinite linear, backstarsop 4s infinite linear;
+}*/
+
+
+
+
+@keyframes backstars {
+    0% { opacity: 30%; right: -10px;}
+    100% { opacity: 30%; right: -60000px}
+}
+
+@keyframes backstarsop {
+    0% { opacity: 50%;}
+    50% { opacity: 15%;}
+    100% { opacity: 50%;}
+}
+
+
+@keyframes starmovement {
+
+    0% { opacity: 0%;}
+    50% { opacity: 100%;}
+    100% { opacity: 0%;}
+}
+
+.slide1right{
+    height: 100%;
+    width: 70%;
+    background-color: rgb(1, 188, 235);
+    background-image: url(fundo.jpg);
+    background-size: contain;
+    float: right;
+    z-index: 1000;
+}
+
+.informationareaslide1{
+    height: 70vh;
+    width: 70vh;
+    background-color: rgb(32, 32, 29);
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    z-index: 30;
+}
+
+.objetivos>h1{
+    display: inline-block;
+    font-size: 5vh;
+    text-align: center;
+    color: white;
+    margin-top: 4vh;
+}
+
+.objetivos{
+    text-align: center;
+}
+
+.topicosobjetivos>p{
+    color: white;
+    font-size: 3vh;
+    padding: 0% 7%;
+    margin-top: 3vh;
+}
+
+.topicosobjetivos{
+    margin-top: 3vh;
+}
+
+.imgum{
+    width: 15vh;
+    position: absolute;
+    bottom: 2vh;
+    left: 3vh;
+    z-index: 0;
+    animation: rotate 7s infinite linear;
+    cursor: pointer;
+    z-index: 3;
+}
+
+
+.askimgum{
+    width: 0vh;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 6vh;
+    left: 11vh;
+    border-radius: 15px;
+    z-index: 0;
+    overflow: hidden;
+    transition: 1s;
+    font-size: 0vh;
+}
+
+.askimgum>p{
+    transform: translate(-50%,-50%);
+    position: relative;
+    top: 50%;
+    left: 62%;
+}
+
+.askimgum.active{
+    width: 32vh;
+    font-size: 2vh;
+}
+
+.botaoum{
+    height: 5vh;
+    width: 20vh;
+    position: absolute;
+    left: 5vh;
+    cursor: pointer;
+    z-index: 10000000;
+    background-color: rgb(32, 32, 29);
+    border: none;
+}
+
+@keyframes rotate {
+
+    0% { rotate: 0deg;}
+    50% { rotate: 40deg;}
+    100% { rotate: 0deg;}
+}
+
+.lineprocess{
+    height: 100%;
+    width: 2vh;
+    background-color: rgb(1, 188, 235);
+    position: absolute;
+    left: 0vh;
+}
+
+.slide1.active{
+    display: none;
+}
+
+
+
+
+
+
+.slide2{
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(32, 32, 29);
+    float: right;
+    overflow: hidden;
+}
+
+.toptop{
+    font-size: 3.5vh;
+    color: white;
+    margin-top: 2vh;
+    padding: 0% 10%;
+}
+
+.toptopdiv{
+    margin-top: 4vh;
+
+}
+
+.imgdois{
+    width: 15vh;
+    position: relative;
+    top: 68vh;
+    left: 3vh;
+    z-index: 0;
+    animation: rotate 7s infinite linear;
+    cursor: pointer;
+    z-index: 3;
+    animation: rotate 7s infinite linear;
+}
+
+.askimgdois{
+    width: 0vh;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 21vh;
+    left: 11vh;
+    border-radius: 15px;
+    z-index: 0;
+    overflow: hidden;
+    transition: 1s;
+    font-size: 0vh;
+}
+
+.askimgdois>p{
+    transform: translate(-50%,-50%);
+    position: relative;
+    top: 50%;
+    left: 62%;
+}
+
+.askimgdois.active{
+    width: 32vh;
+    font-size: 2vh;
+}
+
+@keyframes rotate {
+
+    0% { rotate: 0deg;}
+    50% { rotate: 40deg;}
+    100% { rotate: 0deg;}
+}
+
+.lineprocess{
+    height: 100%;
+    width: 2vh;
+    background-color: rgb(1, 188, 235);
+    position: absolute;
+    left: 0vh;
+}
+
+.botaodois{
+    height: 5vh;
+    width: 20vh;
+    position: absolute;
+    left: 5vh;
+    cursor: pointer;
+    z-index: 10000000;
+    background-color: rgb(32, 32, 29);
+    border: none;
+}
+
+.slide2.active.active{
+    display: none;
+}
+
+
+
+
+
+
+.slide3{
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(32, 32, 29);
+    float: right;
+    overflow: hidden;
+}
+
+.imgtres{
+    width: 15vh;
+    position: relative;
+    top: 52vh;
+    left: 3vh;
+    z-index: 0;
+    animation: rotate 7s infinite linear;
+    cursor: pointer;
+    z-index: 3;
+    animation: rotate 7s infinite linear;
+}
+
+.askimgtres{
+    width: 0vh;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 37vh;
+    left: 11vh;
+    border-radius: 15px;
+    z-index: 0;
+    overflow: hidden;
+    transition: 1s;
+    font-size: 0vh;
+}
+
+.askimgtres>p{
+    transform: translate(-50%,-50%);
+    position: relative;
+    top: 50%;
+    left: 62%;
+}
+
+.askimgtres.active{
+    width: 32vh;
+    font-size: 2vh;
+}
+
+
+.botaotres{
+    height: 5vh;
+    width: 20vh;
+    position: absolute;
+    left: 5vh;
+    cursor: pointer;
+    z-index: 10000000;
+    background-color: rgb(32, 32, 29);
+    border: none;
+}
+
+.slide3.active{
+    display: none;
+}
+
+
+
+
+
+
+
+.slide4{
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(32, 32, 29);
+    float: right;
+    overflow: hidden;
+}
+
+#imgquatro{
+    width: 15vh;
+    margin-left: 4vh;
+    margin-top: 40vh;
+    animation: rotate 7s infinite linear;
+}
+
+.botaoquatro{
+    height: 5vh;
+    width: 20vh;
+    position: absolute;
+    left: 5vh;
+    cursor: pointer;
+    z-index: 10000000;
+    background-color: rgb(32, 32, 29);
+    border: none;
+}
+
+.slide4.active{
+    display: none;
+}
+
+
+
+
+
+
+.slide5{
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(32, 32, 29);
+    float: right;
+    overflow: hidden;
+}
+
+#imgcinco{
+    width: 15vh;
+    margin-left: 4vh;
+    margin-top: 25vh;
+    animation: rotate 7s infinite linear;
+}
+
+.botaocinco{
+    height: 5vh;
+    width: 20vh;
+    position: absolute;
+    left: 5vh;
+    cursor: pointer;
+    z-index: 10000000;
+    background-color: rgb(32, 32, 29);
+    border: none;
+}
+
+.slide5.active{
+    display: none;
+}
+
+
+
+
+.slide6{
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(32, 32, 29);
+    float: right;
+    overflow: hidden;
+}
+
+#imgseis{
+    width: 15vh;
+    margin-left: 4vh;
+    margin-top: 10vh;
+    animation: rotate 7s infinite linear;
+}
+
+.slide6.active{
+    display: none;
+}
+
+.slide7{
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(32, 32, 29);
+    float: right;
+    overflow: hidden;
+}
+
+.botaoseis{
+    height: 5vh;
+    width: 20vh;
+    position: absolute;
+    left: 5vh;
+    cursor: pointer;
+    z-index: 10000000;
+    background-color: rgb(32, 32, 29);
+    border: none;
+}
+
+.sociedade{
+    width: 70vh;
+    margin: 0 auto;
+}
+
+
+.botaosete{
+    height: 5vh;
+    width: 20vh;
+    position: absolute;
+    left: 5vh;
+    cursor: pointer;
+    z-index: 10000000;
+    background-color: rgb(32, 32, 29);
+    border: none;
+}
+
+.slide7.active{
+    display: none;
+}
